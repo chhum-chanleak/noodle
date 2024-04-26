@@ -297,6 +297,7 @@ footer {
   }
 
   .about-us-description section{
+    width: 100%;
     display: flex;
   }
 
@@ -305,7 +306,7 @@ footer {
   }
 
   .about-us-description p{
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .about-us-description .buttons {
