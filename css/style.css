@@ -87,22 +87,61 @@ body {
 }
 
 .about-us {
-  background-color: #ff0;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin-top: 1em;
 }
 
 .about-us .logo {
-  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: auto;
+  width: 300px;
 }
 
 .about-us .about-us-description {
-  background-color: #fff;
+  width: 40%;
+  padding: 1em;
+}
+
+.about-us-description section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-description p {
+  text-indent: 1em;
+  font-size: 14px;
+}
+
+.about-us-description .btn {
+  border: 1px solid #fff;
+  color: #fff
+}
+
+.about-us-description .first {
+  background-color: #ee9506;
 }
 
 
 @media only screen and (max-width: 768px) {
+
+  .container {
+    width: 100%;
+  }
+
+  main {
+    background-color: #fff;
+    padding: 0;
+  }
 
   .dishes{
     display: flex;
@@ -138,6 +177,66 @@ body {
 
   .description small:nth-child(2) {
     font-size: 1rem;
+  }
+
+  .about-us {
+    background-color: #aaa;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+  }
+
+
+  .about-us .logo {
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .logo img {
+    height: auto;
+    width: 200px;
+  }
+
+  .about-us-description {
+    width: 100%;
+    font-size: 8px;
+    padding: 0;
+  }
+
+  .about-us-description section{
+    display: flex;
+  }
+
+  .about-us-description h1{
+    font-size: 26px;
+  }
+
+  .about-us-description p{
+    font-size: 10px;
+  }
+
+  .about-us-description .buttons {
+    display: flex;
+    gap: 1em;
+  }
+
+  .about-us-description .btn {
+    font-size: 8.2px;
+  }
+
+  .about-us-description .btn.first {
+    width: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-us-description .second {
+    width: 6rem;
   }
   
 }
