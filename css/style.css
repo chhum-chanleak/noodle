@@ -10,8 +10,105 @@ body {
 
 .menu {
   background-color: #ff00ff;
-  width: 70%;
+  width: 90%;
   height: auto;
   margin: auto;
   margin-top: 2rem;
+  padding: 1em;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dishes {
+  background-color: #ff00ff;
+  width: 100%;
+}
+
+.dish {
+  height: 18rem;
+  width: 22%;
+  background-color: #eb7f7f;
+  padding: 1em;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-image: url("../img/cart-orange.png");
+  background-size: auto 40px;
+  background-repeat: no-repeat;
+  background-position: right 15.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+.dish img {
+  height: 140px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dish small {
+  font-size: 16px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5rem;
+}
+
+.description small:nth-child(2) {
+    color: #ee9506;
+    font-size: 2rem;
+}
+
+.icon {
+  background-color: #ee9506;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .dish {
+    height: auto;
+    width: 50%;
+  }
+
+  .dish img {
+    height: auto;
+    width: 100px;
+    margin: auto;
+  }
+
+  .dish {
+    background-image: url("../img/cart-orange.png");
+    background-size: auto 20px;
+    background-repeat: no-repeat;
+    background-position: right 10rem;
+    
+  }
+
+  .description {
+    line-height: 1rem;
+  }
+
+  .description small {
+    font-size: 8.2px;
+  }
+
+  .description small:nth-child(2) {
+    font-size: 1rem;
+  }
+  
 }
