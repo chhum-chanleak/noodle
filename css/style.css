@@ -9,7 +9,6 @@ body {
 }
 
 .menu {
-  background-color: #ff00ff;
   width: 90%;
   height: auto;
   margin: auto;
@@ -24,14 +23,18 @@ body {
 }
 
 .dishes {
-  background-color: #ff00ff;
+  height: auto;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .dish {
   height: 18rem;
   width: 22%;
-  background-color: #eb7f7f;
+  background-color: #b84141;
   padding: 1em;
   border: 1px solid #fff;
   border-radius: 4px;
@@ -79,6 +82,11 @@ body {
 
 
 @media only screen and (max-width: 768px) {
+
+  .dishes{
+    display: flex;
+    flex-direction: column;
+  }
 
   .dish {
     height: auto;
