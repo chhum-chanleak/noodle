@@ -8,6 +8,13 @@ body {
   color: white;
 }
 
+.container {
+  width: 90%;
+  padding: 1rem;
+  height: auto;
+  margin-top: 1rem;
+}
+
 .menu {
   width: 90%;
   height: auto;
